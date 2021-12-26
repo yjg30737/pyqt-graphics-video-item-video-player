@@ -35,12 +35,21 @@ Preview of interaction between cursor movement and control widget visibility
 
 https://user-images.githubusercontent.com/55078043/147399452-891b9f8e-2a20-4724-8946-2e19526289c4.mp4
 
-Preview of watching video with the pyqt-graphics-video-item-video-player and using control widget to navigate the video
+Control widget is going to show when
+* The cursor enters into the window
+* The cursor stays on the control widget
+* The cursor moves again
+
+Control widget is going to hide when
+* The cursor leaves from the window
+* The cursor stays outside of the control widget
+
+Preview of watching video with the pyqt-graphics-video-item-video-player and using control widget to navigate the video (Example video is result video of <a href="https://github.com/yjg30737/pyqt-find-replace-text-widget.git">pyqt-find-replace-text-widget</a>.)
 
 https://user-images.githubusercontent.com/55078043/147399585-e251d5fd-6285-4dce-9922-75d0a230ceb3.mp4
 
 ## Note
-QGraphicsVideoItem's quality is worse than QVideoWidget. Yeah.
+QGraphicsVideoItem's video quality is worse than QVideoWidgets.
 
 You maybe wonder why did i make this in the first place.
 
