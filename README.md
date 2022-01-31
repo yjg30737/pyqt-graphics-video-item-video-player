@@ -33,7 +33,7 @@ if __name__ == "__main__":
 ### Result
 #### 1. Preview of interaction between cursor movement and control widget visibility
 
-https://user-images.githubusercontent.com/55078043/147399452-891b9f8e-2a20-4724-8946-2e19526289c4.mp4
+https://user-images.githubusercontent.com/55078043/151730859-9eb8e104-9a59-4e13-9407-2a1642211221.mp4
 
 Control widget is going to show when
 * The cursor enters into the window
