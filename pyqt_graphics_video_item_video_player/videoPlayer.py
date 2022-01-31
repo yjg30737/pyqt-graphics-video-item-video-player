@@ -87,12 +87,3 @@ class VideoPlayer(QWidget):
             self.__timer.timeout.disconnect()
         else:
             self.__timer.timeout.connect(self.__bottomWidgetToggled)
-
-
-if __name__ == '__main__':
-    import sys
-
-    app = QApplication(sys.argv)
-    player = VideoPlayer()
-    player.show()
-    sys.exit(app.exec_())
