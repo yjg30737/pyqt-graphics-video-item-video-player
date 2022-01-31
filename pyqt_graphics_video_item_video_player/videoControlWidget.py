@@ -65,7 +65,7 @@ class VideoControlWidget(QWidget):
         btnWidget.setStyleSheet('QWidget { '
                                 'border: 1px solid #444; '
                                 'padding: 5px; '
-                                'border-radius: 5px; '
+                                'border-radius: 10px; '
                                 'background-color: #BBB;}'
                                 )
 
