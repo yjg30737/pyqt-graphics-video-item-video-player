@@ -1,1 +1,2 @@
-git+https://git@github.com/yjg30737/pyqt-resource-helper.git@main
+mutagen
+pyqt-resource-helper>=0.0.1

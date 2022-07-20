@@ -12,7 +12,8 @@ setup(
                   'pyqt_graphics_video_item_video_player.ico': ['pause.png', 'play.png', 'stop.png']},
     url='https://github.com/yjg30737/pyqt-graphics-video-item-video-player.git',
     install_requires=[
+        'mutagen',
         'PyQt5>=5.8',
-        'pyqt-resource-helper @ git+https://git@github.com/yjg30737/pyqt-resource-helper.git@main'
+        'pyqt-resource-helper>=0.0.1'
     ]
 )
