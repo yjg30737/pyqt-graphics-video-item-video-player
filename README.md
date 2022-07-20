@@ -5,9 +5,10 @@ Video(mp4 file only) player using QGraphicsVideoItem. Control widget at the bott
 PyQt5 >= 5.8
 
 ## Setup
-```pip3 install git+https://github.com/yjg30737/pyqt-graphics-video-item-video-player --upgrade```
+`python -m pip install git+https://github.com/yjg30737/pyqt-graphics-video-item-video-player --upgrade`
 
 ## Included Packages
+* <a href="https://mutagen.readthedocs.io/en/latest/index.html">mutagen</a>
 * <a href="https://github.com/yjg30737/pyqt-resource-helper.git">pyqt-resource-helper</a>
 
 ## Usage
@@ -58,6 +59,3 @@ Because for some reasons, I can't show the control widget (which has transparent
 I'm still trying to figure out the way to solve this problem.
 
 One more thing, There are some flaws in timer feature and button toggling. I will fix it.
-
-
-
