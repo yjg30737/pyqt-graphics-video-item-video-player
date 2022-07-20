@@ -1,6 +1,6 @@
 from PyQt5.QtCore import QUrl, QTimer
 from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
-from PyQt5.QtWidgets import QWidget, QGridLayout, QApplication
+from PyQt5.QtWidgets import QWidget, QGridLayout
 
 from pyqt_graphics_video_item_video_player.videoControlWidget import VideoControlWidget
 from pyqt_graphics_video_item_video_player.videoGraphicsView import VideoGraphicsView
