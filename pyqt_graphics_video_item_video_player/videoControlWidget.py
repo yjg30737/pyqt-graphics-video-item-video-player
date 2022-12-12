@@ -69,11 +69,11 @@ class VideoControlWidget(QWidget):
                                 'background-color: #BBB;}'
                                 )
 
-        btnWidget.setMinimumWidth(btnWidget.sizeHint().width()*1.5)
-        btnWidget.setMinimumHeight(btnWidget.sizeHint().height()*1.5)
+        btnWidget.setMinimumWidth(btnWidget.sizeHint().width()*2)
+        btnWidget.setMinimumHeight(btnWidget.sizeHint().height()*2)
 
-        btnWidget.setMaximumWidth(btnWidget.sizeHint().width()*2.5)
-        btnWidget.setMaximumHeight(btnWidget.sizeHint().height()*2.5)
+        btnWidget.setMaximumWidth(btnWidget.sizeHint().width()*3)
+        btnWidget.setMaximumHeight(btnWidget.sizeHint().height()*3)
 
         lay = QHBoxLayout()
         lay.setAlignment(Qt.AlignCenter)
