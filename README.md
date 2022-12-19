@@ -10,6 +10,7 @@ PyQt5 >= 5.8
 ## Included Packages
 * <a href="https://mutagen.readthedocs.io/en/latest/index.html">mutagen</a>
 * <a href="https://github.com/yjg30737/pyqt-resource-helper.git">pyqt-resource-helper</a>
+* <a href="https://github.com/yjg30737/pyqt-bounding-box.git">pyqt-bounding-box</a>
 
 ## Usage
 This video player is mp4 only. 
