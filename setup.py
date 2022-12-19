@@ -14,6 +14,7 @@ setup(
     install_requires=[
         'mutagen',
         'PyQt5>=5.8',
-        'pyqt-resource-helper>=0.0.1'
+        'pyqt-resource-helper>=0.0.1',
+        'pyqt-bounding-box'
     ]
 )

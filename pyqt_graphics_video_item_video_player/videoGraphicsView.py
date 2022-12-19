@@ -36,9 +36,8 @@ class VideoGraphicsView(QGraphicsView):
         w_f = float(self.contentsRect().size().width())
         h_f = float(self.contentsRect().size().height())
         self.__item.setSize(QSizeF(w_f, h_f))
-
-        self.__box.setWidth(self.contentsRect().size().width())
-        self.__box.setHeight(self.contentsRect().size().height())
+        self.__box.setSize(w_f, h_f)
+        self.__box.setMaximumSize(w_f, h_f)
 
         self.__item.stackBefore(self.__box)
         self.setScene(scene)
