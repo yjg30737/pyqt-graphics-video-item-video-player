@@ -1,8 +1,10 @@
 import os.path
 
 from PyQt5.QtCore import pyqtSignal, QSizeF, Qt
+from PyQt5.QtGui import QColor
 from PyQt5.QtMultimediaWidgets import QGraphicsVideoItem
 from PyQt5.QtWidgets import QGraphicsScene, QGraphicsView
+from pyqt_bounding_box import BoundingBox
 
 
 class VideoGraphicsView(QGraphicsView):
@@ -21,15 +23,24 @@ class VideoGraphicsView(QGraphicsView):
 
         self.setStyleSheet('QGraphicsView { background: #000; }')
         scene = QGraphicsScene()
-        self.setScene(scene)
 
         self.__item = QGraphicsVideoItem()
         self.__item.setAcceptDrops(True)
-        self.scene().addItem(self.__item)
+
+        self.__box = BoundingBox()
+        self.__box.setColor(QColor(255, 255, 255))
+        self.__box.setStyle(Qt.SolidLine)
+        self.__box.moveBy(40, 40)
+
+        scene.addItem(self.__item)
+        scene.addItem(self.__box)
 
         w_f = float(self.contentsRect().size().width())
         h_f = float(self.contentsRect().size().height())
         self.__item.setSize(QSizeF(w_f, h_f))
+
+        self.__item.stackBefore(self.__box)
+        self.setScene(scene)
 
     def setFileName(self, filename):
         self.__filename = filename

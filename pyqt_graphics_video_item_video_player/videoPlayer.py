@@ -17,7 +17,8 @@ class VideoPlayer(QWidget):
         self.__view = VideoGraphicsView()
         self.__view.setMouseTracking(True)
         self.__view.setMedia.connect(self.setMedia)
-        self.__view.mouseMoveEvent = self.mouseMoveEvent
+        self.__view.scene().installEventFilter(self)
+        self.installEventFilter(self)
 
         self.__mediaPlayer.setVideoOutput(self.__view.getItem())
         
@@ -68,12 +69,13 @@ class VideoPlayer(QWidget):
         self.__timerStart()
         return super().enterEvent(e)
 
-    def mouseMoveEvent(self, e):
-        if self.__timer.isActive():
-            self.__timer.setInterval(self.__hideShowInterval)
-        else:
-            self.__timerStart()
-        return super().mouseMoveEvent(e)
+    def eventFilter(self, obj, e):
+        if int(e.type()) == 5 or int(e.type()) == 155:
+            if self.__timer.isActive():
+                self.__timer.setInterval(self.__hideShowInterval)
+            else:
+                self.__timerStart()
+        return super().eventFilter(obj, e)
 
     def leaveEvent(self, e):
         self.__videoControlWidget.setVisible(False)
