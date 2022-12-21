@@ -1,6 +1,8 @@
 # pyqt-graphics-video-item-video-player
 Video(mp4 file only) player using QGraphicsVideoItem. Control widget at the bottom is shown/hidden followed by cursor's movement.
 
+<h4>Note: You need K-Lite Codec to play the video with this.</h4>
+
 ## Requirements
 PyQt5 >= 5.8
 
