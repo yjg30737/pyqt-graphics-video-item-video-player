@@ -120,7 +120,7 @@ class VideoControlWidget(QWidget):
     def updateDuration(self, duration):
         self.__slider.setRange(0, duration)
         self.__slider.setEnabled(duration > 0)
-        self.__slider.setPageStep(duration / 1000)
+        self.__slider.setPageStep(duration // 1000)
 
     def setPlayer(self, player: QMediaPlayer):
         self.__mediaPlayer = player

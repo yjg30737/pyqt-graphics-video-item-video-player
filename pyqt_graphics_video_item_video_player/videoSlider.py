@@ -27,7 +27,8 @@ class VideoSlider(QSlider):
             return self.maximum()
         else:
             value = self.minimum() + (self.maximum() - self.minimum()) * x / self.width()
-            self.setValue(value)
+            # for preventing the error related to using Python3.10 (can't be float)
+            self.setValue(int(value))
             return value
 
     def mousePressEvent(self, e):
